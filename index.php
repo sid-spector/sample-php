@@ -4,14 +4,14 @@ require __DIR__ . '/vendor/autoload.php';
 use Cowsayphp\Farm;
 
 header('Content-Type: text/plain');
-#header('Access-Control-Allow-Origin: *');
-#header('Access-Control-Allow-Methods: GET, POST');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST');
 
-#header("Content-Security-Policy: default-src 'self'");
+header("Content-Security-Policy: default-src 'self'");
 
 header("strict-transport-security: max-age=600");
-#header("X-XSS-Protection: 0");
-#header("X-Frame-Options: DENY");
+header("X-XSS-Protection: 0");
+header("X-Frame-Options: DENY");
 
 $text = "Set a message by adding ?message=<message here> to the URL";
 if(isset($_GET['message']) && $_GET['message'] != '') {
