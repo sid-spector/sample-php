@@ -9,7 +9,7 @@ header('Content-Type: text/plain');
 
 #header("Content-Security-Policy: default-src 'self'");
 
-header("Strict-Transport-Security 'max-age=16070400'");
+header("strict-transport-security: max-age=600");
 #header("X-XSS-Protection: 0");
 #header("X-Frame-Options: DENY");
 
